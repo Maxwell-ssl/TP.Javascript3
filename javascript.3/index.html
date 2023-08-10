@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h4 style="text-align: center; opacity: 25%; color: white;">
+              Desarrollo de soluciones informaticas <br>
+              Javascript - Actividad 3#
+            </h4>
+            <h1>NOTAS</h1>
+
+            <div id="contenedorAgregarTarea">
+              <input type="text" id="entradaTarea" placeholder="Agregar tarea">
+              <button onclick="BotonAgregarTareas()" id="botonAgregar">+</button>
+            </div>
+            <ul id="listaTareas"></ul>
+        </div>
+        
+        <!-- Agregado: Plantilla para el botón de eliminación de comentario -->
+        <template id="eliminarComentarioTemplate">
+            <button id="eliminar" onclick="eliminarComentario(this)">Eliminar</button>
+        </template>
+    </body>
+</html>

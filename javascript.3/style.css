@@ -1,0 +1,83 @@
+* {
+    font-family: "Inter", sans-serif;
+  }
+  
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 450px;
+    margin: 50px auto;
+    background-color: #111111;
+    padding: 20px;
+    box-shadow: 0 0 70px rgba(128, 0, 0, 0.625);
+    border-radius: 28px 80px 28px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  #contenedorAgregarTarea {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  #entradaTarea {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  #botonAgregar {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  #eliminar {
+    background-color: transparent;
+    color: #ff3b30;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    /* opacity: 0;*/
+    transition: opacity 0.2s ease;
+    border: 1px solid white; /* Agregado: Borde blanco */
+}
+
+li:hover #eliminar {
+    opacity: 1;
+}
